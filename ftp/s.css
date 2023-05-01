@@ -1,0 +1,105 @@
+/*
+
+欢迎查看源代码。指点批评、合作联络 q780309206
+
+*/
+
+
+/* re */
+body{font-size:12pt;background:#178577;margin:0;padding:0}
+*::selection{background:#AFA582cc;color:#007}
+a{text-decoration:none}
+:root{--h:calc(100vh - 6rem);}
+
+
+/* pairing */
+div{
+  position:fixed;width:390px;top:18%;left:calc(50% - 390px/2 - 21pt);z-index:7;
+  display:none;flex-direction:column;
+  padding:18pt;border-radius:9pt;
+  border:3pt solid #ccc;border-style:outset;
+  background:#eee;text-align:center;
+}
+h1{line-height:1;margin:auto;font-size:2rem}
+h2{margin:1rem 0 18pt;font-size:13pt;font-weight:normal;line-height:1.2}
+input{width:81%;margin:0 auto 7pt;padding:3pt;text-align:left}
+div button{width:39%;padding:3pt;margin:0 auto 9pt;font-size:15pt;cursor:pointer}
+aside{display:flex;flex-direction:row}
+#fatal{z-index:99;background:#ffcccc}
+
+/* cov */
+#cov{position:fixed;top:-9pt;left:-9pt;width:200vw;height:99vh;z-index:5;background:#2337}
+
+
+/* chating */
+section{
+  position: fixed; bottom:6rem;left:0;
+  width:100vw; height:7rem;
+  display:flex;
+  flex-direction:row;flex-wrap:nowrap;
+  align-items:center; justify-content: space-evenly;
+  margin:0;padding:1rem;
+  border-bottom:2pt solid #777;border-top:2pt solid #777;
+  background:#ccc;
+}
+textarea{
+  display:block;
+  width:50%; height:calc(5rem - 1px);
+  margin:0 0 0 9pt;padding:1rem; border-radius:.5rem;
+  font-size:1.2rem;line-height:1;
+  resize: none;
+}
+section button{
+  display:block;user-select:none;
+  margin:0 9pt 0 0;padding:9pt 2rem; border:0;border-radius:99pt;outline:#111 solid 1pt;
+  font-size:1.3rem;line-height:2;
+  white-space:nowrap;
+  cursor:pointer;
+} section button:hover{outline-width:medium;background:#7FD} section button:active{background:#27E0C7}
+main{
+  max-width:720pt;
+  margin:auto;/* 居中; */padding: 9pt 2rem 17rem;
+  display:flex;flex-direction:column;
+}
+.alerts{
+  display:block;
+  font-size:1rem; line-height:1;
+  padding:7px 2rem; margin:9pt auto 0;
+  border-radius:9pt;
+  min-width:27pt; max-width:81%;
+  background:#eee;
+}
+main a{color:blue;cursor:pointer} main a:hover{text-decoration:underline;text-decoration-thickness:2px;}
+.me,.you{
+  display:block;
+  font-size:18px; line-height:1.3;
+  padding:9pt 18pt 1rem;
+  min-width:27pt;
+}
+.you{
+  background:aqua;margin:9pt 16pt 3pt 0;border-radius:0 1rem 1rem;
+  align-self:flex-start;
+}
+.me{
+  background:lime;margin:9pt 0 3pt 16pt;border-radius:1rem 1rem 0;
+  align-self:flex-end;
+}
+.jm,.jy{
+  display:block;
+  position:relative; top:calc(-2pt + -1rem);
+  height:0;margin:0;
+  font-size:9pt;line-height:1; color:#777;font-weight:bold;
+}
+.jy{
+  align-self:flex-start;
+  left:9pt;
+}
+.jm{
+  align-self:flex-end;
+  right:3pt;
+}
+
+
+
+/* footer */
+footer{height:6rem;position:fixed;z-index:9;bottom:0;margin:0;display:flex;justify-content:center;align-items:center;width:100vw;background:#111;user-select:none;font-size:9pt}footer cite{color:#aaa;font-size:7pt}footer a{transition:color .2s ease;color:#fffe} footer a:hover{color:#25cfb7;border-radius:999pt}footer p{display:block; font-size:9pt;line-height:2; color:#aaa; text-align: center;}
